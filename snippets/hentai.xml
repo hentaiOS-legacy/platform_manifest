@@ -104,4 +104,14 @@
   <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
+  <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" remote="github/hentaiOS-legacy" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845 and sm8150, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+  </project>
 </manifest>
