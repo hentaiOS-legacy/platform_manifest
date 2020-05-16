@@ -91,6 +91,7 @@
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/libhardware_legacy" />
+  <remove-project name="platform/hardware/qcom/keymaster" />
   <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/sdm845/display" />
   <remove-project name="platform/hardware/qcom/sdm845/media" />
@@ -122,8 +123,6 @@
   <project path="build/blueprint" name="platform_build_blueprint" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="pdk" remote="github/hentaiOS" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="github/hentaiOS" />
-  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="github/hentaiOS" />
@@ -160,11 +159,8 @@
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk" remote="github/hentaiOS" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
-  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" />
-  <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform_vendor_nxp_opensource_external_libnfc-nci" remote="github/hentaiOS" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform_vendor_nxp_opensource_frameworks" remote="github/hentaiOS" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform_vendor_nxp_opensource_packages_apps_Nfc" remote="github/hentaiOS" />
@@ -205,4 +201,12 @@
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" revision="lineage-17.1-caf" remote="github/LineageOS" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" groups="qcom,pdk-qcom" remote="github/LineageOS" />
   <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
+
+  <!-- HentaiOS legacy additions -->
+  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS-legacy" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS-legacy" />
+  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
 </manifest>
