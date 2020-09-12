@@ -119,14 +119,9 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="github/hentaiOS" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
   <project path="build/blueprint" name="platform_build_blueprint" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="pdk" remote="github/hentaiOS" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
-  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="github/hentaiOS" >
     <!-- add guard for AOSP hardware/qcom dir -->
@@ -207,12 +202,17 @@
   <!-- HentaiOS legacy additions -->
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="github/hentaiOS-legacy" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="external/selinux" name="platform_external_selinux" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS-legacy" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS-legacy" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
