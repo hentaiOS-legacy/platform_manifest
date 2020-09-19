@@ -58,12 +58,17 @@
   <remove-project name="device/linaro/hikey" />
   <remove-project name="device/linaro/hikey-kernel" />
   <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/hardware/qcom/keymaster" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/providers/MediaProvider" />
   <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/system/core" />
 
   <!-- hentaiOSのスタート -->
   <project path="build/make" name="platform_build" groups="pdk" remote="github/hentaiOS" >
@@ -87,9 +92,16 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" clone-depth="1"/>
-  <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
 
   <!-- Additions from LineageOS -->
   <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
+
+  <!-- HentaiOS legacy additions -->
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="external/selinux" name="platform_external_selinux" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
 </manifest>
