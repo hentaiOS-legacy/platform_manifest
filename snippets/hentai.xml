@@ -119,6 +119,9 @@
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" />
 
   <!-- Additions from LineageOS -->
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="github/LineageOS" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="github/LineageOS" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="github/LineageOS" />
   <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
 
   <!-- HentaiOS legacy additions -->
