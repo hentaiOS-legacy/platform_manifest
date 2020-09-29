@@ -82,6 +82,8 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/libhardware_legacy" />  
   <remove-project name="platform/hardware/qcom/keymaster" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
@@ -105,9 +107,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk" remote="github/hentaiOS" />
@@ -130,21 +130,22 @@
   <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" revision="lineage-17.1" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" revision="lineage-17.1" remote="github/LineageOS" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" revision="lineage-17.1-caf" remote="github/LineageOS" />
 
   <!-- HentaiOS legacy additions -->
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS-legacy" />  
   <project path="external/selinux" name="platform_external_selinux" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github/hentaiOS-legacy" />
   <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
+  <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator" remote="github/hentaiOS-legacy" />  
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="github/hentaiOS-legacy" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="github/hentaiOS-legacy" />  
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" remote="github/hentaiOS-legacy" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-    <!-- for AOSP sdm845 and sm8150, we override os_pickup.mk -->
-    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
     <!-- add guards for CAF repositories -->
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
@@ -152,4 +153,6 @@
   <project path="hardware/qcom-caf/msm8996/audio" name="platform_hardware_qcom-caf_msm8996_audio" groups="qcom,qcom_audio,pdk-qcom" remote="github/hentaiOS-legacy" />
   <project path="hardware/qcom-caf/msm8996/display" name="platform_hardware_qcom-caf_msm8996_display" groups="pdk-qcom,qcom,qcom_display" remote="github/hentaiOS-legacy" />
   <project path="hardware/qcom-caf/msm8996/media" name="platform_hardware_qcom-caf_msm8996_media" groups="qcom,pdk-qcom" remote="github/hentaiOS-legacy" />
+  <project path="hardware/qcom-caf/bt" name="platform_hardware_qcom-caf_bt" remote="github/hentaiOS-legacy" /> 
+  <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom-caf_wlan" remote="github/hentaiOS-legacy" /> 
 </manifest>
