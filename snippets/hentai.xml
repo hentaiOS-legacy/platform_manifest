@@ -120,7 +120,6 @@
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="github/LineageOS" />
   <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="github/LineageOS" />
   <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="github/LineageOS" />
-  <project path="external/json-c" name="android_external_json-c" remote="github/LineageOS" />
   <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" revision="lineage-18.0-caf-msm8996" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" revision="lineage-18.0-caf-msm8996" remote="github/LineageOS" />
