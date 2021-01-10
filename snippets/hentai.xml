@@ -50,8 +50,8 @@
   <remove-project name="device/google/sunfish" />
   <remove-project name="device/google/sunfish-kernel" />
   <remove-project name="device/google/trout" />
-  <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
@@ -70,6 +70,7 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
 
   <!-- hentaiOSのスタート -->
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="github/hentaiOS" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="arm,pdk-arm" remote="github/hentaiOS" />
   <project path="external/json-c" name="platform_external_json-c" groups="pdk" remote="github/hentaiOS" />
@@ -142,7 +143,6 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="github/hentaiOS-legacy" />
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
