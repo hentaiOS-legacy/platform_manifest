@@ -57,6 +57,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
+  <remove-project name="platform/external/selinux" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
@@ -148,6 +149,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="external/selinux" name="platform_external_selinux" remote="github/hentaiOS-legacy" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="github/hentaiOS-legacy" />
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
