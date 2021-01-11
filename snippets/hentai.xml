@@ -57,7 +57,6 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
-  <remove-project name="platform/external/selinux" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
@@ -102,7 +101,6 @@
   <project path="hardware/qcom/sm7250/display" name="platform_hardware_qcom_bengal_display" groups="qcom-bengal" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS" />
   <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" remote="gitlab/hentaiOS" clone-depth="1"/>
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="vendor" remote="github/hentaiOS" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" />
@@ -149,7 +147,6 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="external/selinux" name="platform_external_selinux" remote="github/hentaiOS-legacy" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="github/hentaiOS-legacy" />
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
@@ -157,6 +154,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS-legacy" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
 </manifest>
