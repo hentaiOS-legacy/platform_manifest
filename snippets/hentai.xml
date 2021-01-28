@@ -57,6 +57,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
+  <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
@@ -142,6 +143,7 @@
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="github/LineageOS" />
 
   <!-- HentaiOS-legacy -->
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="github/hentaiOS-legacy" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="github/hentaiOS-legacy" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS-legacy" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
