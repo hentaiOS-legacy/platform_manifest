@@ -65,12 +65,6 @@
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/hardware/libhardware" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
-  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
 
   <!-- hentaiOSのスタート -->
   <project path="device/generic/art" name="device_generic_art" groups="pdk" remote="github/hentaiOS" />
@@ -149,12 +143,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="frameworks/av" name="platform_frameworks_av" remote="github/hentaiOS-legacy" />
-  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
-  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" remote="github/hentaiOS-legacy" clone-depth="1" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS-legacy" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
 </manifest>
