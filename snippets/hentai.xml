@@ -58,7 +58,6 @@
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/arm-optimized-routines" />
   <remove-project name="platform/external/tinycompress" />
-  <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/hardware/qcom/sm7250/display" />
@@ -119,15 +118,11 @@
   <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom-caf_wlan" groups="pdk" remote="github/hentaiOS" />
 
   <!-- Additions from LineageOS -->
-  <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="github/LineageOS" />
-  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="github/LineageOS" />
-  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="github/LineageOS" />
-  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="github/LineageOS" />
-  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="github/LineageOS" />
   <project path="prebuilts/tools-hentai" name="android_prebuilts_tools-lineage" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" revision="lineage-18.0-caf-msm8996" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" revision="lineage-18.0-caf-msm8996" remote="github/LineageOS" />
+  <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" revision="lineage-18.0-caf-msm8996" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="lineage-18.0-caf-msm8998" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="lineage-18.0-caf-msm8998" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="lineage-18.0-caf-msm8998" remote="github/LineageOS" />
@@ -137,14 +132,11 @@
   <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="lineage-18.0-caf-sm8150" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="lineage-18.0-caf-sm8150" remote="github/LineageOS" />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" revision="lineage-18.0-caf-sm8150" remote="github/LineageOS" />
-  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="github/LineageOS" />
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="github/LineageOS" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="github/LineageOS" />
 
   <!-- HentaiOS-legacy -->
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="github/hentaiOS-legacy" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="github/hentaiOS-legacy" />
-  <project path="hardware/qcom-caf/msm8996/media" name="platform_hardware_qcom-caf_msm8996_media" revision="Rika" remote="github/hentaiOS-legacy" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" groups="vendor" remote="github/hentaiOS-legacy" />
   <project path="vendor/hentai" name="platform_vendor_hentai" groups="vendor" remote="github/hentaiOS-legacy" />
 </manifest>
